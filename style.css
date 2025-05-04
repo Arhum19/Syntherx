@@ -6,16 +6,20 @@ body {
 
   /* Navbar Styling */
   .navbar {
-    /* Light blue background */
-    padding: 15px;
     position: sticky;
     top: 0;
-    background-color: black;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(12, 5, 5);
+    padding: 15px 0;
   }
+  
+  
 
   .navbar-brand img {
-    height: 80px; /* Adjust logo size */
-    width: auto;
+    height: auto; /* Adjust logo size */
+    width: 220px;
   }
 
   .navbar-nav .nav-link {
@@ -62,14 +66,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 87vh;
+    max-height: 100vh;
     padding: 50px;
   }
 
   .header-right {
     width: 60%;
   }
-
+  /*for syntherX animation*/
+  .blue{
+    color: #008cff;
+  }
   .header-right img {
     width: 100%;
 
