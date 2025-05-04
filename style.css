@@ -6,22 +6,19 @@ body {
 
   /* Navbar Styling */
   .navbar {
-    position: sticky;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 9999;
     background-color: rgb(12, 5, 5);
-    padding: 15px 0;
+
   }
-  
-  
 
   .navbar-brand img {
     height: auto; /* Adjust logo size */
     width: 220px;
   }
-
+  .nav-btn:hover{
+    background-color: white;
+    color: blue ;
+  }
   .navbar-nav .nav-link {
     color: white;
     font-size: 18px;
@@ -34,19 +31,6 @@ body {
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-  .nav-icon {
-    background-color: #007bff; /* Light blue */
-    padding: 8px 16px;
-    border-radius: 15px;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-
-  .nav-icon:hover {
-    background-color: #0056b3; /* Darker blue on hover */
   }
 
   /* Align icons vertically when collapsed */
@@ -326,6 +310,7 @@ body {
   .z-2 {
     z-index: 2;
   }
+
   
   #contact {
     background-color: #000;
