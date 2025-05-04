@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SyntherX - Home</title>
+    <title>SyntherX</title>
+    <!--Favicon links-->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <!--css link-->
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,6 +23,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!--js link-->
+    <script src="script.js" defer></script>
+    
   </head>
   <body>
     <!-- Navbar -->
@@ -249,38 +253,217 @@
         <a href="#" class="btn btn-primary mt-4 rounded-3">See More Projects</a>
       </div>
     </section>
-
-    <!--About us sectoin-->
-    <section id="about" class="about-us py-5 text-white">
+    <!-- About Us Section -->
+    <section id="about" class="about-us-section py-5 bg-dark">
       <div class="container">
-        <div class="row">
-          <!--left section-->
-          <div class="col-md-5">
-            <h2 class="fw-bold text-left">About us</h2>
-
-            <p><strong>Leading companies trust us</strong></p>
-            <p>
-              We
-              <a href="#" class="text-primary">add development capacity</a> to
-              tech teams. Our value isn't limited to building teams but is
-              equally distributed across the project lifecycle. We are a custom
-              software development company that guarantees the successful
-              delivery of your project.
-            </p>
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-md-6 mb-4 mb-md-0 position-relative">
+            <div class="position-relative z-2 rounded overflow-hidden shadow">
+              <img
+                src="./about.jpeg"
+                alt="Team collaboration"
+                class="img-fluid rounded"
+              />
+            </div>
+            <!-- Decorative Circles -->
+            <div
+              class="decorative-circle top-circle bg-primary position-absolute"
+            ></div>
+            <div
+              class="decorative-circle bottom-circle bg-primary position-absolute"
+            ></div>
           </div>
-          <!--right section-->
-          <div class="col-md-7 text-center">
-            <img
-              src="./images/logo.png"
-              alt="SyntherX Logo"
-              class="img-fluid p-2"
-              style="max-width: 90%"
-            />
+
+          <!-- Text Section -->
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3 text-white">About Our Agency</h2>
+            <p class="text-white">
+              Founded in 2025, our agency brings together a team of passionate
+              experts dedicated to creating exceptional digital experiences. We
+              combine creativity, technology, and strategic thinking to deliver
+              solutions that drive measurable results.
+            </p>
+            <p class="text-white">
+              What sets us apart is our collaborative approach. We work closely
+              with our clients, understanding their unique challenges and
+              objectives to create customized solutions that exceed
+              expectations.
+            </p>
+
+            <!-- Stats -->
+            <div class="row text-center my-4">
+              <div class="col-6 col-sm-3">
+                <h3 class="fw-bold text-primary">100+</h3>
+                <p class="text-muted">Projects</p>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h3 class="fw-bold text-primary">50+</h3>
+                <p class="text-muted">Clients</p>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h3 class="fw-bold text-primary">15+</h3>
+                <p class="text-muted">Team</p>
+              </div>
+              <div class="col-6 col-sm-3">
+                <h3 class="fw-bold text-primary">8+</h3>
+                <p class="text-muted">Years</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!--faq section starts here-->
+    <section class="faq-section">
+      <div class="faq-container container my-5">
+        <h2 class="faq-head text-center mb-4 text-white">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="accordion border-0" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What services does SyntherX offer?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We specialize in web and mobile app development, UI/UX design,
+                SEO optimization, cloud-based solutions, and AI/ML integration
+                tailored to your business goals
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How does SyntherX ensure quality in its projects?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We follow agile methodologies, perform rigorous testing, and
+                maintain continuous client communication to deliver
+                high-quality, scalable solutions.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Do you work with startups or just established businesses?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We work with both! Whether you’re a startup or a growing
+                enterprise, SyntherX offers customized solutions to fit your
+                needs and budget.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How long does a typical project take?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Project timelines vary based on complexity, but we always
+                provide clear timelines during the planning phase and deliver on
+                schedule.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How do I get started with SyntherX ?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Simply contact us through our website or email. We’ll schedule a
+                consultation to understand your goals and suggest the best
+                solutions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--faq sections ends here -->
+
+    <!--Contact us section-->
     <section id="contact" class="py-5">
       <div class="container py-5">
         <div class="row justify-content-center">
@@ -327,7 +510,9 @@
         </div>
       </div>
     </section>
+    <!--contact us section ends here-->
 
+    <!--footer-->
     <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
@@ -396,6 +581,7 @@
         </div>
       </div>
     </footer>
+    <!--footer ends here-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--For type scripting-->
