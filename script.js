@@ -36,3 +36,41 @@
     }
   });
 
+
+
+  // PROJECT SECTION 
+
+  const container = document.querySelector(".slider-container");
+  const items = document.querySelectorAll(".slider-item");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let currentIndex = 0;
+
+  function getVisibleItemsCount() {
+    if (window.innerWidth <= 768) return 1;
+    if (window.innerWidth <= 992) return 2;
+    return 3;
+  }
+
+  function updateSlider() {
+    const itemWidth = items[0].offsetWidth + 16;
+    const maxIndex = items.length - getVisibleItemsCount();
+    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+    const translateX = -currentIndex * itemWidth;
+    container.style.transform = `translateX(${translateX}px)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex++;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex--;
+    updateSlider();
+  });
+
+  window.addEventListener("resize", updateSlider);
+  window.addEventListener("load", updateSlider);
+  // PROJECT SECTION 
